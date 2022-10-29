@@ -248,7 +248,7 @@ abilities,against_bug,against_dark,against_dragon,against_electric,against_fairy
 ['Shed Skin'],1,1,1,0,1,2,0.5,0.5,1,4,2,2,0.5,0.25,1,0.5,2,4,84,10240,35,410,45,Hard Shell Pokémon,70,1250000,1.2,70,Sanagirasサナギラス,Pupitar,50,247,65,70,51,rock,ground,152.0,2,0
 "['Sand Stream', 'Unnerve']",2,0.5,1,1,2,4,0.5,0.5,0.5,2,2,1,0.5,0.5,0,1,2,2,164,10240,35,700,45,Armor Pokémon,150,1250000,2.0,100,Bangirasバンギラス,Tyranitar,50,248,95,120,71,rock,dark,202.0,2,0
 "['Pressure', 'Multiscale']",1,2,1,2,1,0.25,1,1,2,0.5,0,2,1,1,0.5,2,1,1,90,30720,0,680,3,Diving Pokémon,130,1250000,5.2,106,Lugiaルギア,Lugia,,249,90,154,110,psychic,flying,216.0,2,1
-"['Pressure', 'Regenerator']",0.25,1,1,2,0.5,0.5,0.5,1,1,0.25,0,1,1,1,1,4,0.5,2,130,30720,0,680,3,Rainbow Pokémon,90,1250000,3.8,106,Hououホウオウ,Ho-Oh,,250,110,154,90,fire,flying,199.0,2,1
+"['Pressure', 'Regenerator']",0.25,1,1,2,0.5,0.5,0.5,1,1,0.25,0,1,1,1,1,4,0.5,2,130,30720,0,680,3,Rainbow Pokémon,90,1250000,3.8,106,Hououホウオウ,HoOh,,250,110,154,90,fire,flying,199.0,2,1
 ['Natural Cure'],4,2,1,0.5,1,0.5,2,2,2,0.5,0.5,2,1,2,0.5,1,1,0.5,100,30720,100,600,45,Time Travel Pokémon,100,1059860,0.6,100,Celebiセレビィ,Celebi,,251,100,100,100,psychic,grass,5.0,2,1
 "['Overgrow', 'Unburden']",2,1,1,0.5,1,1,2,2,1,0.5,0.5,2,1,2,1,1,1,0.5,45,5120,70,310,45,Wood Gecko Pokémon,35,1059860,0.5,40,Kimoriキモリ,Treecko,88.1,252,65,55,70,grass,,5.0,3,0
 "['Overgrow', 'Unburden']",2,1,1,0.5,1,1,2,2,1,0.5,0.5,2,1,2,1,1,1,0.5,65,5120,70,405,45,Wood Gecko Pokémon,45,1059860,0.9,50,Juptileジュプトル,Grovyle,88.1,253,85,65,95,grass,,21.6,3,0
@@ -437,7 +437,7 @@ abilities,against_bug,against_dark,against_dragon,against_electric,against_fairy
 "['Levitate', 'Heatproof', 'Heavy Metal']",1,2,0.5,1,0.5,1,2,0.5,2,0.5,2,0.5,0.5,0,0.25,0.5,0.5,1,24,5120,70,300,255,Bronze Pokémon,86,1000000,0.5,57,Dohmirrorドーミラー,Bronzor,,436,24,86,23,steel,psychic,60.5,4,0
 "['Levitate', 'Heatproof', 'Heavy Metal']",1,2,0.5,1,0.5,1,2,0.5,2,0.5,2,0.5,0.5,0,0.25,0.5,0.5,1,89,5120,70,500,90,Bronze Bell Pokémon,116,1000000,1.3,67,Dohtakunドータクン,Bronzong,,437,79,116,33,steel,psychic,187.0,4,0
 "['Sturdy', 'Rock Head', 'Rattled']",1,1,1,1,1,2,0.5,0.5,1,2,2,1,0.5,0.5,1,1,2,2,80,5120,70,290,255,Bonsai Pokémon,95,1000000,0.5,50,Usohachiウソハチ,Bonsly,50,438,10,45,10,rock,,15.0,4,0
-"['Soundproof', 'Filter', 'Technician']",1,1,0,1,1,0.25,1,1,2,1,1,1,1,2,0.5,1,2,1,25,6400,70,310,145,Mime Pokémon,45,1000000,0.6,20,Maneneマネネ,Mime Jr.,50,439,70,90,60,psychic,fairy,13.0,4,0
+"['Soundproof', 'Filter', 'Technician']",1,1,0,1,1,0.25,1,1,2,1,1,1,1,2,0.5,1,2,1,25,6400,70,310,145,Mime Pokémon,45,1000000,0.6,20,Maneneマネネ,MimeJr,50,439,70,90,60,psychic,fairy,13.0,4,0
 "['Natural Cure', 'Serene Grace', 'Friend Guard']",1,1,1,1,1,2,1,1,0,1,1,1,1,1,1,1,1,1,5,10240,140,220,130,Playhouse Pokémon,5,800000,0.6,100,Pinpukuピンプク,Happiny,0,440,15,65,30,normal,,24.4,4,0
 "['Keen Eye', 'Tangled Feet', 'Big Pecks']",0.5,1,1,2,1,1,1,1,0,0.5,0,2,1,1,1,2,1,1,65,5120,35,411,30,Music Note Pokémon,45,1059860,0.5,76,Perapペラップ,Chatot,50,441,92,42,91,normal,flying,1.9,4,0
 "['Pressure', 'Infiltrator']",1,1,1,1,2,0,1,1,1,1,1,1,0,0.5,0,1,1,1,92,7680,70,485,100,Forbidden Pokémon,108,1000000,1.0,50,Mikarugeミカルゲ,Spiritomb,50,442,92,108,35,ghost,dark,108.0,4,0

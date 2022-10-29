@@ -1,0 +1,14 @@
+backbone: efficientnet_b0
+backbone_kwargs: null
+head: linear
+labels: null
+learning_rate: null
+loss_fn: null
+lr_scheduler: null
+metrics: null
+multi_label: false
+num_classes: 1000
+optimizer: Adam
+pretrained: true
+training_strategy: default
+training_strategy_kwargs: null

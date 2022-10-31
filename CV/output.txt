@@ -1,259 +1,269 @@
-    | Name                                       | Type                   | Params
-----------------------------------------------------------------------------------------
-0   | train_metrics                              | ModuleDict             | 0     
-1   | train_metrics.accuracy                     | Accuracy               | 0     
-2   | train_metrics.f1score                      | F1Score                | 0     
-3   | val_metrics                                | ModuleDict             | 0     
-4   | val_metrics.accuracy                       | Accuracy               | 0     
-5   | val_metrics.f1score                        | F1Score                | 0     
-6   | test_metrics                               | ModuleDict             | 0     
-7   | test_metrics.accuracy                      | Accuracy               | 0     
-8   | test_metrics.f1score                       | F1Score                | 0     
-9   | adapter                                    | DefaultAdapter         | 4.0 M 
-10  | adapter.backbone                           | EfficientNet           | 4.0 M 
-11  | adapter.backbone.conv_stem                 | Conv2d                 | 864   
-12  | adapter.backbone.bn1                       | BatchNorm2d            | 64    
-13  | adapter.backbone.act1                      | SiLU                   | 0     
-14  | adapter.backbone.blocks                    | Sequential             | 3.6 M 
-15  | adapter.backbone.blocks.0                  | Sequential             | 1.4 K 
-16  | adapter.backbone.blocks.0.0                | DepthwiseSeparableConv | 1.4 K 
-17  | adapter.backbone.blocks.0.0.conv_dw        | Conv2d                 | 288   
-18  | adapter.backbone.blocks.0.0.bn1            | BatchNorm2d            | 64    
-19  | adapter.backbone.blocks.0.0.act1           | SiLU                   | 0     
-20  | adapter.backbone.blocks.0.0.se             | SqueezeExcite          | 552   
-21  | adapter.backbone.blocks.0.0.se.conv_reduce | Conv2d                 | 264   
-22  | adapter.backbone.blocks.0.0.se.act1        | SiLU                   | 0     
-23  | adapter.backbone.blocks.0.0.se.conv_expand | Conv2d                 | 288   
-24  | adapter.backbone.blocks.0.0.se.gate        | Sigmoid                | 0     
-25  | adapter.backbone.blocks.0.0.conv_pw        | Conv2d                 | 512   
-26  | adapter.backbone.blocks.0.0.bn2            | BatchNorm2d            | 32    
-27  | adapter.backbone.blocks.0.0.act2           | Identity               | 0     
-28  | adapter.backbone.blocks.1                  | Sequential             | 16.7 K
-29  | adapter.backbone.blocks.1.0                | InvertedResidual       | 6.0 K 
-30  | adapter.backbone.blocks.1.0.conv_pw        | Conv2d                 | 1.5 K 
-31  | adapter.backbone.blocks.1.0.bn1            | BatchNorm2d            | 192   
-32  | adapter.backbone.blocks.1.0.act1           | SiLU                   | 0     
-33  | adapter.backbone.blocks.1.0.conv_dw        | Conv2d                 | 864   
-34  | adapter.backbone.blocks.1.0.bn2            | BatchNorm2d            | 192   
-35  | adapter.backbone.blocks.1.0.act2           | SiLU                   | 0     
-36  | adapter.backbone.blocks.1.0.se             | SqueezeExcite          | 868   
-37  | adapter.backbone.blocks.1.0.se.conv_reduce | Conv2d                 | 388   
-38  | adapter.backbone.blocks.1.0.se.act1        | SiLU                   | 0     
-39  | adapter.backbone.blocks.1.0.se.conv_expand | Conv2d                 | 480   
-40  | adapter.backbone.blocks.1.0.se.gate        | Sigmoid                | 0     
-41  | adapter.backbone.blocks.1.0.conv_pwl       | Conv2d                 | 2.3 K 
-42  | adapter.backbone.blocks.1.0.bn3            | BatchNorm2d            | 48    
-43  | adapter.backbone.blocks.1.1                | InvertedResidual       | 10.7 K
-44  | adapter.backbone.blocks.1.1.conv_pw        | Conv2d                 | 3.5 K 
-45  | adapter.backbone.blocks.1.1.bn1            | BatchNorm2d            | 288   
-46  | adapter.backbone.blocks.1.1.act1           | SiLU                   | 0     
-47  | adapter.backbone.blocks.1.1.conv_dw        | Conv2d                 | 1.3 K 
-48  | adapter.backbone.blocks.1.1.bn2            | BatchNorm2d            | 288   
-49  | adapter.backbone.blocks.1.1.act2           | SiLU                   | 0     
-50  | adapter.backbone.blocks.1.1.se             | SqueezeExcite          | 1.9 K 
-51  | adapter.backbone.blocks.1.1.se.conv_reduce | Conv2d                 | 870   
-52  | adapter.backbone.blocks.1.1.se.act1        | SiLU                   | 0     
-53  | adapter.backbone.blocks.1.1.se.conv_expand | Conv2d                 | 1.0 K 
-54  | adapter.backbone.blocks.1.1.se.gate        | Sigmoid                | 0     
-55  | adapter.backbone.blocks.1.1.conv_pwl       | Conv2d                 | 3.5 K 
-56  | adapter.backbone.blocks.1.1.bn3            | BatchNorm2d            | 48    
-57  | adapter.backbone.blocks.2                  | Sequential             | 46.6 K
-58  | adapter.backbone.blocks.2.0                | InvertedResidual       | 15.3 K
-59  | adapter.backbone.blocks.2.0.conv_pw        | Conv2d                 | 3.5 K 
-60  | adapter.backbone.blocks.2.0.bn1            | BatchNorm2d            | 288   
-61  | adapter.backbone.blocks.2.0.act1           | SiLU                   | 0     
-62  | adapter.backbone.blocks.2.0.conv_dw        | Conv2d                 | 3.6 K 
-63  | adapter.backbone.blocks.2.0.bn2            | BatchNorm2d            | 288   
-64  | adapter.backbone.blocks.2.0.act2           | SiLU                   | 0     
-65  | adapter.backbone.blocks.2.0.se             | SqueezeExcite          | 1.9 K 
-66  | adapter.backbone.blocks.2.0.se.conv_reduce | Conv2d                 | 870   
-67  | adapter.backbone.blocks.2.0.se.act1        | SiLU                   | 0     
-68  | adapter.backbone.blocks.2.0.se.conv_expand | Conv2d                 | 1.0 K 
-69  | adapter.backbone.blocks.2.0.se.gate        | Sigmoid                | 0     
-70  | adapter.backbone.blocks.2.0.conv_pwl       | Conv2d                 | 5.8 K 
-71  | adapter.backbone.blocks.2.0.bn3            | BatchNorm2d            | 80    
-72  | adapter.backbone.blocks.2.1                | InvertedResidual       | 31.3 K
-73  | adapter.backbone.blocks.2.1.conv_pw        | Conv2d                 | 9.6 K 
-74  | adapter.backbone.blocks.2.1.bn1            | BatchNorm2d            | 480   
-75  | adapter.backbone.blocks.2.1.act1           | SiLU                   | 0     
-76  | adapter.backbone.blocks.2.1.conv_dw        | Conv2d                 | 6.0 K 
-77  | adapter.backbone.blocks.2.1.bn2            | BatchNorm2d            | 480   
-78  | adapter.backbone.blocks.2.1.act2           | SiLU                   | 0     
-79  | adapter.backbone.blocks.2.1.se             | SqueezeExcite          | 5.0 K 
-80  | adapter.backbone.blocks.2.1.se.conv_reduce | Conv2d                 | 2.4 K 
-81  | adapter.backbone.blocks.2.1.se.act1        | SiLU                   | 0     
-82  | adapter.backbone.blocks.2.1.se.conv_expand | Conv2d                 | 2.6 K 
-83  | adapter.backbone.blocks.2.1.se.gate        | Sigmoid                | 0     
-84  | adapter.backbone.blocks.2.1.conv_pwl       | Conv2d                 | 9.6 K 
-85  | adapter.backbone.blocks.2.1.bn3            | BatchNorm2d            | 80    
-86  | adapter.backbone.blocks.3                  | Sequential             | 242 K 
-87  | adapter.backbone.blocks.3.0                | InvertedResidual       | 37.1 K
-88  | adapter.backbone.blocks.3.0.conv_pw        | Conv2d                 | 9.6 K 
-89  | adapter.backbone.blocks.3.0.bn1            | BatchNorm2d            | 480   
-90  | adapter.backbone.blocks.3.0.act1           | SiLU                   | 0     
-91  | adapter.backbone.blocks.3.0.conv_dw        | Conv2d                 | 2.2 K 
-92  | adapter.backbone.blocks.3.0.bn2            | BatchNorm2d            | 480   
-93  | adapter.backbone.blocks.3.0.act2           | SiLU                   | 0     
-94  | adapter.backbone.blocks.3.0.se             | SqueezeExcite          | 5.0 K 
-95  | adapter.backbone.blocks.3.0.se.conv_reduce | Conv2d                 | 2.4 K 
-96  | adapter.backbone.blocks.3.0.se.act1        | SiLU                   | 0     
-97  | adapter.backbone.blocks.3.0.se.conv_expand | Conv2d                 | 2.6 K 
-98  | adapter.backbone.blocks.3.0.se.gate        | Sigmoid                | 0     
-99  | adapter.backbone.blocks.3.0.conv_pwl       | Conv2d                 | 19.2 K
-100 | adapter.backbone.blocks.3.0.bn3            | BatchNorm2d            | 160   
-101 | adapter.backbone.blocks.3.1                | InvertedResidual       | 102 K 
-102 | adapter.backbone.blocks.3.1.conv_pw        | Conv2d                 | 38.4 K
-103 | adapter.backbone.blocks.3.1.bn1            | BatchNorm2d            | 960   
-104 | adapter.backbone.blocks.3.1.act1           | SiLU                   | 0     
-105 | adapter.backbone.blocks.3.1.conv_dw        | Conv2d                 | 4.3 K 
-106 | adapter.backbone.blocks.3.1.bn2            | BatchNorm2d            | 960   
-107 | adapter.backbone.blocks.3.1.act2           | SiLU                   | 0     
-108 | adapter.backbone.blocks.3.1.se             | SqueezeExcite          | 19.7 K
-109 | adapter.backbone.blocks.3.1.se.conv_reduce | Conv2d                 | 9.6 K 
-110 | adapter.backbone.blocks.3.1.se.act1        | SiLU                   | 0     
-111 | adapter.backbone.blocks.3.1.se.conv_expand | Conv2d                 | 10.1 K
-112 | adapter.backbone.blocks.3.1.se.gate        | Sigmoid                | 0     
-113 | adapter.backbone.blocks.3.1.conv_pwl       | Conv2d                 | 38.4 K
-114 | adapter.backbone.blocks.3.1.bn3            | BatchNorm2d            | 160   
-115 | adapter.backbone.blocks.3.2                | InvertedResidual       | 102 K 
-116 | adapter.backbone.blocks.3.2.conv_pw        | Conv2d                 | 38.4 K
-117 | adapter.backbone.blocks.3.2.bn1            | BatchNorm2d            | 960   
-118 | adapter.backbone.blocks.3.2.act1           | SiLU                   | 0     
-119 | adapter.backbone.blocks.3.2.conv_dw        | Conv2d                 | 4.3 K 
-120 | adapter.backbone.blocks.3.2.bn2            | BatchNorm2d            | 960   
-121 | adapter.backbone.blocks.3.2.act2           | SiLU                   | 0     
-122 | adapter.backbone.blocks.3.2.se             | SqueezeExcite          | 19.7 K
-123 | adapter.backbone.blocks.3.2.se.conv_reduce | Conv2d                 | 9.6 K 
-124 | adapter.backbone.blocks.3.2.se.act1        | SiLU                   | 0     
-125 | adapter.backbone.blocks.3.2.se.conv_expand | Conv2d                 | 10.1 K
-126 | adapter.backbone.blocks.3.2.se.gate        | Sigmoid                | 0     
-127 | adapter.backbone.blocks.3.2.conv_pwl       | Conv2d                 | 38.4 K
-128 | adapter.backbone.blocks.3.2.bn3            | BatchNorm2d            | 160   
-129 | adapter.backbone.blocks.4                  | Sequential             | 543 K 
-130 | adapter.backbone.blocks.4.0                | InvertedResidual       | 126 K 
-131 | adapter.backbone.blocks.4.0.conv_pw        | Conv2d                 | 38.4 K
-132 | adapter.backbone.blocks.4.0.bn1            | BatchNorm2d            | 960   
-133 | adapter.backbone.blocks.4.0.act1           | SiLU                   | 0     
-134 | adapter.backbone.blocks.4.0.conv_dw        | Conv2d                 | 12.0 K
-135 | adapter.backbone.blocks.4.0.bn2            | BatchNorm2d            | 960   
-136 | adapter.backbone.blocks.4.0.act2           | SiLU                   | 0     
-137 | adapter.backbone.blocks.4.0.se             | SqueezeExcite          | 19.7 K
-138 | adapter.backbone.blocks.4.0.se.conv_reduce | Conv2d                 | 9.6 K 
-139 | adapter.backbone.blocks.4.0.se.act1        | SiLU                   | 0     
-140 | adapter.backbone.blocks.4.0.se.conv_expand | Conv2d                 | 10.1 K
-141 | adapter.backbone.blocks.4.0.se.gate        | Sigmoid                | 0     
-142 | adapter.backbone.blocks.4.0.conv_pwl       | Conv2d                 | 53.8 K
-143 | adapter.backbone.blocks.4.0.bn3            | BatchNorm2d            | 224   
-144 | adapter.backbone.blocks.4.1                | InvertedResidual       | 208 K 
-145 | adapter.backbone.blocks.4.1.conv_pw        | Conv2d                 | 75.3 K
-146 | adapter.backbone.blocks.4.1.bn1            | BatchNorm2d            | 1.3 K 
-147 | adapter.backbone.blocks.4.1.act1           | SiLU                   | 0     
-148 | adapter.backbone.blocks.4.1.conv_dw        | Conv2d                 | 16.8 K
-149 | adapter.backbone.blocks.4.1.bn2            | BatchNorm2d            | 1.3 K 
-150 | adapter.backbone.blocks.4.1.act2           | SiLU                   | 0     
-151 | adapter.backbone.blocks.4.1.se             | SqueezeExcite          | 38.3 K
-152 | adapter.backbone.blocks.4.1.se.conv_reduce | Conv2d                 | 18.8 K
-153 | adapter.backbone.blocks.4.1.se.act1        | SiLU                   | 0     
-154 | adapter.backbone.blocks.4.1.se.conv_expand | Conv2d                 | 19.5 K
-155 | adapter.backbone.blocks.4.1.se.gate        | Sigmoid                | 0     
-156 | adapter.backbone.blocks.4.1.conv_pwl       | Conv2d                 | 75.3 K
-157 | adapter.backbone.blocks.4.1.bn3            | BatchNorm2d            | 224   
-158 | adapter.backbone.blocks.4.2                | InvertedResidual       | 208 K 
-159 | adapter.backbone.blocks.4.2.conv_pw        | Conv2d                 | 75.3 K
-160 | adapter.backbone.blocks.4.2.bn1            | BatchNorm2d            | 1.3 K 
-161 | adapter.backbone.blocks.4.2.act1           | SiLU                   | 0     
-162 | adapter.backbone.blocks.4.2.conv_dw        | Conv2d                 | 16.8 K
-163 | adapter.backbone.blocks.4.2.bn2            | BatchNorm2d            | 1.3 K 
-164 | adapter.backbone.blocks.4.2.act2           | SiLU                   | 0     
-165 | adapter.backbone.blocks.4.2.se             | SqueezeExcite          | 38.3 K
-166 | adapter.backbone.blocks.4.2.se.conv_reduce | Conv2d                 | 18.8 K
-167 | adapter.backbone.blocks.4.2.se.act1        | SiLU                   | 0     
-168 | adapter.backbone.blocks.4.2.se.conv_expand | Conv2d                 | 19.5 K
-169 | adapter.backbone.blocks.4.2.se.gate        | Sigmoid                | 0     
-170 | adapter.backbone.blocks.4.2.conv_pwl       | Conv2d                 | 75.3 K
-171 | adapter.backbone.blocks.4.2.bn3            | BatchNorm2d            | 224   
-172 | adapter.backbone.blocks.5                  | Sequential             | 2.0 M 
-173 | adapter.backbone.blocks.5.0                | InvertedResidual       | 262 K 
-174 | adapter.backbone.blocks.5.0.conv_pw        | Conv2d                 | 75.3 K
-175 | adapter.backbone.blocks.5.0.bn1            | BatchNorm2d            | 1.3 K 
-176 | adapter.backbone.blocks.5.0.act1           | SiLU                   | 0     
-177 | adapter.backbone.blocks.5.0.conv_dw        | Conv2d                 | 16.8 K
-178 | adapter.backbone.blocks.5.0.bn2            | BatchNorm2d            | 1.3 K 
-179 | adapter.backbone.blocks.5.0.act2           | SiLU                   | 0     
-180 | adapter.backbone.blocks.5.0.se             | SqueezeExcite          | 38.3 K
-181 | adapter.backbone.blocks.5.0.se.conv_reduce | Conv2d                 | 18.8 K
-182 | adapter.backbone.blocks.5.0.se.act1        | SiLU                   | 0     
-183 | adapter.backbone.blocks.5.0.se.conv_expand | Conv2d                 | 19.5 K
-184 | adapter.backbone.blocks.5.0.se.gate        | Sigmoid                | 0     
-185 | adapter.backbone.blocks.5.0.conv_pwl       | Conv2d                 | 129 K 
-186 | adapter.backbone.blocks.5.0.bn3            | BatchNorm2d            | 384   
-187 | adapter.backbone.blocks.5.1                | InvertedResidual       | 587 K 
-188 | adapter.backbone.blocks.5.1.conv_pw        | Conv2d                 | 221 K 
-189 | adapter.backbone.blocks.5.1.bn1            | BatchNorm2d            | 2.3 K 
-190 | adapter.backbone.blocks.5.1.act1           | SiLU                   | 0     
-191 | adapter.backbone.blocks.5.1.conv_dw        | Conv2d                 | 28.8 K
-192 | adapter.backbone.blocks.5.1.bn2            | BatchNorm2d            | 2.3 K 
-193 | adapter.backbone.blocks.5.1.act2           | SiLU                   | 0     
-194 | adapter.backbone.blocks.5.1.se             | SqueezeExcite          | 111 K 
-195 | adapter.backbone.blocks.5.1.se.conv_reduce | Conv2d                 | 55.3 K
-196 | adapter.backbone.blocks.5.1.se.act1        | SiLU                   | 0     
-197 | adapter.backbone.blocks.5.1.se.conv_expand | Conv2d                 | 56.4 K
-198 | adapter.backbone.blocks.5.1.se.gate        | Sigmoid                | 0     
-199 | adapter.backbone.blocks.5.1.conv_pwl       | Conv2d                 | 221 K 
-200 | adapter.backbone.blocks.5.1.bn3            | BatchNorm2d            | 384   
-201 | adapter.backbone.blocks.5.2                | InvertedResidual       | 587 K 
-202 | adapter.backbone.blocks.5.2.conv_pw        | Conv2d                 | 221 K 
-203 | adapter.backbone.blocks.5.2.bn1            | BatchNorm2d            | 2.3 K 
-204 | adapter.backbone.blocks.5.2.act1           | SiLU                   | 0     
-205 | adapter.backbone.blocks.5.2.conv_dw        | Conv2d                 | 28.8 K
-206 | adapter.backbone.blocks.5.2.bn2            | BatchNorm2d            | 2.3 K 
-207 | adapter.backbone.blocks.5.2.act2           | SiLU                   | 0     
-208 | adapter.backbone.blocks.5.2.se             | SqueezeExcite          | 111 K 
-209 | adapter.backbone.blocks.5.2.se.conv_reduce | Conv2d                 | 55.3 K
-210 | adapter.backbone.blocks.5.2.se.act1        | SiLU                   | 0     
-211 | adapter.backbone.blocks.5.2.se.conv_expand | Conv2d                 | 56.4 K
-212 | adapter.backbone.blocks.5.2.se.gate        | Sigmoid                | 0     
-213 | adapter.backbone.blocks.5.2.conv_pwl       | Conv2d                 | 221 K 
-214 | adapter.backbone.blocks.5.2.bn3            | BatchNorm2d            | 384   
-215 | adapter.backbone.blocks.5.3                | InvertedResidual       | 587 K 
-216 | adapter.backbone.blocks.5.3.conv_pw        | Conv2d                 | 221 K 
-217 | adapter.backbone.blocks.5.3.bn1            | BatchNorm2d            | 2.3 K 
-218 | adapter.backbone.blocks.5.3.act1           | SiLU                   | 0     
-219 | adapter.backbone.blocks.5.3.conv_dw        | Conv2d                 | 28.8 K
-220 | adapter.backbone.blocks.5.3.bn2            | BatchNorm2d            | 2.3 K 
-221 | adapter.backbone.blocks.5.3.act2           | SiLU                   | 0     
-222 | adapter.backbone.blocks.5.3.se             | SqueezeExcite          | 111 K 
-223 | adapter.backbone.blocks.5.3.se.conv_reduce | Conv2d                 | 55.3 K
-224 | adapter.backbone.blocks.5.3.se.act1        | SiLU                   | 0     
-225 | adapter.backbone.blocks.5.3.se.conv_expand | Conv2d                 | 56.4 K
-226 | adapter.backbone.blocks.5.3.se.gate        | Sigmoid                | 0     
-227 | adapter.backbone.blocks.5.3.conv_pwl       | Conv2d                 | 221 K 
-228 | adapter.backbone.blocks.5.3.bn3            | BatchNorm2d            | 384   
-229 | adapter.backbone.blocks.6                  | Sequential             | 717 K 
-230 | adapter.backbone.blocks.6.0                | InvertedResidual       | 717 K 
-231 | adapter.backbone.blocks.6.0.conv_pw        | Conv2d                 | 221 K 
-232 | adapter.backbone.blocks.6.0.bn1            | BatchNorm2d            | 2.3 K 
-233 | adapter.backbone.blocks.6.0.act1           | SiLU                   | 0     
-234 | adapter.backbone.blocks.6.0.conv_dw        | Conv2d                 | 10.4 K
-235 | adapter.backbone.blocks.6.0.bn2            | BatchNorm2d            | 2.3 K 
-236 | adapter.backbone.blocks.6.0.act2           | SiLU                   | 0     
-237 | adapter.backbone.blocks.6.0.se             | SqueezeExcite          | 111 K 
-238 | adapter.backbone.blocks.6.0.se.conv_reduce | Conv2d                 | 55.3 K
-239 | adapter.backbone.blocks.6.0.se.act1        | SiLU                   | 0     
-240 | adapter.backbone.blocks.6.0.se.conv_expand | Conv2d                 | 56.4 K
-241 | adapter.backbone.blocks.6.0.se.gate        | Sigmoid                | 0     
-242 | adapter.backbone.blocks.6.0.conv_pwl       | Conv2d                 | 368 K 
-243 | adapter.backbone.blocks.6.0.bn3            | BatchNorm2d            | 640   
-244 | adapter.backbone.conv_head                 | Conv2d                 | 409 K 
-245 | adapter.backbone.bn2                       | BatchNorm2d            | 2.6 K 
-246 | adapter.backbone.act2                      | SiLU                   | 0     
-247 | adapter.backbone.global_pool               | SelectAdaptivePool2d   | 0     
-248 | adapter.backbone.global_pool.flatten       | Flatten                | 0     
-249 | adapter.backbone.global_pool.pool          | AdaptiveAvgPool2d      | 0     
-250 | adapter.backbone.classifier                | Identity               | 0     
-251 | adapter.head                               | Linear                 | 2.6 K 
-----------------------------------------------------------------------------------------
-4.0 M     Trainable params
-0         Non-trainable params
-4.0 M     Total params
-16.040    Total estimated model params size (MB)
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1         [-1, 32, 112, 112]             864
+       BatchNorm2d-2         [-1, 32, 112, 112]              64
+              SiLU-3         [-1, 32, 112, 112]               0
+            Conv2d-4         [-1, 32, 112, 112]             288
+       BatchNorm2d-5         [-1, 32, 112, 112]              64
+              SiLU-6         [-1, 32, 112, 112]               0
+ AdaptiveAvgPool2d-7             [-1, 32, 1, 1]               0
+            Conv2d-8              [-1, 8, 1, 1]             264
+              SiLU-9              [-1, 8, 1, 1]               0
+           Conv2d-10             [-1, 32, 1, 1]             288
+          Sigmoid-11             [-1, 32, 1, 1]               0
+SqueezeExcitation-12         [-1, 32, 112, 112]               0
+           Conv2d-13         [-1, 16, 112, 112]             512
+      BatchNorm2d-14         [-1, 16, 112, 112]              32
+           MBConv-15         [-1, 16, 112, 112]               0
+           Conv2d-16         [-1, 96, 112, 112]           1,536
+      BatchNorm2d-17         [-1, 96, 112, 112]             192
+             SiLU-18         [-1, 96, 112, 112]               0
+           Conv2d-19           [-1, 96, 56, 56]             864
+      BatchNorm2d-20           [-1, 96, 56, 56]             192
+             SiLU-21           [-1, 96, 56, 56]               0
+AdaptiveAvgPool2d-22             [-1, 96, 1, 1]               0
+           Conv2d-23              [-1, 4, 1, 1]             388
+             SiLU-24              [-1, 4, 1, 1]               0
+           Conv2d-25             [-1, 96, 1, 1]             480
+          Sigmoid-26             [-1, 96, 1, 1]               0
+SqueezeExcitation-27           [-1, 96, 56, 56]               0
+           Conv2d-28           [-1, 24, 56, 56]           2,304
+      BatchNorm2d-29           [-1, 24, 56, 56]              48
+           MBConv-30           [-1, 24, 56, 56]               0
+           Conv2d-31          [-1, 144, 56, 56]           3,456
+      BatchNorm2d-32          [-1, 144, 56, 56]             288
+             SiLU-33          [-1, 144, 56, 56]               0
+           Conv2d-34          [-1, 144, 56, 56]           1,296
+      BatchNorm2d-35          [-1, 144, 56, 56]             288
+             SiLU-36          [-1, 144, 56, 56]               0
+AdaptiveAvgPool2d-37            [-1, 144, 1, 1]               0
+           Conv2d-38              [-1, 6, 1, 1]             870
+             SiLU-39              [-1, 6, 1, 1]               0
+           Conv2d-40            [-1, 144, 1, 1]           1,008
+          Sigmoid-41            [-1, 144, 1, 1]               0
+SqueezeExcitation-42          [-1, 144, 56, 56]               0
+           Conv2d-43           [-1, 24, 56, 56]           3,456
+      BatchNorm2d-44           [-1, 24, 56, 56]              48
+  StochasticDepth-45           [-1, 24, 56, 56]               0
+           MBConv-46           [-1, 24, 56, 56]               0
+           Conv2d-47          [-1, 144, 56, 56]           3,456
+      BatchNorm2d-48          [-1, 144, 56, 56]             288
+             SiLU-49          [-1, 144, 56, 56]               0
+           Conv2d-50          [-1, 144, 28, 28]           3,600
+      BatchNorm2d-51          [-1, 144, 28, 28]             288
+             SiLU-52          [-1, 144, 28, 28]               0
+AdaptiveAvgPool2d-53            [-1, 144, 1, 1]               0
+           Conv2d-54              [-1, 6, 1, 1]             870
+             SiLU-55              [-1, 6, 1, 1]               0
+           Conv2d-56            [-1, 144, 1, 1]           1,008
+          Sigmoid-57            [-1, 144, 1, 1]               0
+SqueezeExcitation-58          [-1, 144, 28, 28]               0
+           Conv2d-59           [-1, 40, 28, 28]           5,760
+      BatchNorm2d-60           [-1, 40, 28, 28]              80
+           MBConv-61           [-1, 40, 28, 28]               0
+           Conv2d-62          [-1, 240, 28, 28]           9,600
+      BatchNorm2d-63          [-1, 240, 28, 28]             480
+             SiLU-64          [-1, 240, 28, 28]               0
+           Conv2d-65          [-1, 240, 28, 28]           6,000
+      BatchNorm2d-66          [-1, 240, 28, 28]             480
+             SiLU-67          [-1, 240, 28, 28]               0
+AdaptiveAvgPool2d-68            [-1, 240, 1, 1]               0
+           Conv2d-69             [-1, 10, 1, 1]           2,410
+             SiLU-70             [-1, 10, 1, 1]               0
+           Conv2d-71            [-1, 240, 1, 1]           2,640
+          Sigmoid-72            [-1, 240, 1, 1]               0
+SqueezeExcitation-73          [-1, 240, 28, 28]               0
+           Conv2d-74           [-1, 40, 28, 28]           9,600
+      BatchNorm2d-75           [-1, 40, 28, 28]              80
+  StochasticDepth-76           [-1, 40, 28, 28]               0
+           MBConv-77           [-1, 40, 28, 28]               0
+           Conv2d-78          [-1, 240, 28, 28]           9,600
+      BatchNorm2d-79          [-1, 240, 28, 28]             480
+             SiLU-80          [-1, 240, 28, 28]               0
+           Conv2d-81          [-1, 240, 14, 14]           2,160
+      BatchNorm2d-82          [-1, 240, 14, 14]             480
+             SiLU-83          [-1, 240, 14, 14]               0
+AdaptiveAvgPool2d-84            [-1, 240, 1, 1]               0
+           Conv2d-85             [-1, 10, 1, 1]           2,410
+             SiLU-86             [-1, 10, 1, 1]               0
+           Conv2d-87            [-1, 240, 1, 1]           2,640
+          Sigmoid-88            [-1, 240, 1, 1]               0
+SqueezeExcitation-89          [-1, 240, 14, 14]               0
+           Conv2d-90           [-1, 80, 14, 14]          19,200
+      BatchNorm2d-91           [-1, 80, 14, 14]             160
+           MBConv-92           [-1, 80, 14, 14]               0
+           Conv2d-93          [-1, 480, 14, 14]          38,400
+      BatchNorm2d-94          [-1, 480, 14, 14]             960
+             SiLU-95          [-1, 480, 14, 14]               0
+           Conv2d-96          [-1, 480, 14, 14]           4,320
+      BatchNorm2d-97          [-1, 480, 14, 14]             960
+             SiLU-98          [-1, 480, 14, 14]               0
+AdaptiveAvgPool2d-99            [-1, 480, 1, 1]               0
+          Conv2d-100             [-1, 20, 1, 1]           9,620
+            SiLU-101             [-1, 20, 1, 1]               0
+          Conv2d-102            [-1, 480, 1, 1]          10,080
+         Sigmoid-103            [-1, 480, 1, 1]               0
+SqueezeExcitation-104          [-1, 480, 14, 14]               0
+          Conv2d-105           [-1, 80, 14, 14]          38,400
+     BatchNorm2d-106           [-1, 80, 14, 14]             160
+ StochasticDepth-107           [-1, 80, 14, 14]               0
+          MBConv-108           [-1, 80, 14, 14]               0
+          Conv2d-109          [-1, 480, 14, 14]          38,400
+     BatchNorm2d-110          [-1, 480, 14, 14]             960
+            SiLU-111          [-1, 480, 14, 14]               0
+          Conv2d-112          [-1, 480, 14, 14]           4,320
+     BatchNorm2d-113          [-1, 480, 14, 14]             960
+            SiLU-114          [-1, 480, 14, 14]               0
+AdaptiveAvgPool2d-115            [-1, 480, 1, 1]               0
+          Conv2d-116             [-1, 20, 1, 1]           9,620
+            SiLU-117             [-1, 20, 1, 1]               0
+          Conv2d-118            [-1, 480, 1, 1]          10,080
+         Sigmoid-119            [-1, 480, 1, 1]               0
+SqueezeExcitation-120          [-1, 480, 14, 14]               0
+          Conv2d-121           [-1, 80, 14, 14]          38,400
+     BatchNorm2d-122           [-1, 80, 14, 14]             160
+ StochasticDepth-123           [-1, 80, 14, 14]               0
+          MBConv-124           [-1, 80, 14, 14]               0
+          Conv2d-125          [-1, 480, 14, 14]          38,400
+     BatchNorm2d-126          [-1, 480, 14, 14]             960
+            SiLU-127          [-1, 480, 14, 14]               0
+          Conv2d-128          [-1, 480, 14, 14]          12,000
+     BatchNorm2d-129          [-1, 480, 14, 14]             960
+            SiLU-130          [-1, 480, 14, 14]               0
+AdaptiveAvgPool2d-131            [-1, 480, 1, 1]               0
+          Conv2d-132             [-1, 20, 1, 1]           9,620
+            SiLU-133             [-1, 20, 1, 1]               0
+          Conv2d-134            [-1, 480, 1, 1]          10,080
+         Sigmoid-135            [-1, 480, 1, 1]               0
+SqueezeExcitation-136          [-1, 480, 14, 14]               0
+          Conv2d-137          [-1, 112, 14, 14]          53,760
+     BatchNorm2d-138          [-1, 112, 14, 14]             224
+          MBConv-139          [-1, 112, 14, 14]               0
+          Conv2d-140          [-1, 672, 14, 14]          75,264
+     BatchNorm2d-141          [-1, 672, 14, 14]           1,344
+            SiLU-142          [-1, 672, 14, 14]               0
+          Conv2d-143          [-1, 672, 14, 14]          16,800
+     BatchNorm2d-144          [-1, 672, 14, 14]           1,344
+            SiLU-145          [-1, 672, 14, 14]               0
+AdaptiveAvgPool2d-146            [-1, 672, 1, 1]               0
+          Conv2d-147             [-1, 28, 1, 1]          18,844
+            SiLU-148             [-1, 28, 1, 1]               0
+          Conv2d-149            [-1, 672, 1, 1]          19,488
+         Sigmoid-150            [-1, 672, 1, 1]               0
+SqueezeExcitation-151          [-1, 672, 14, 14]               0
+          Conv2d-152          [-1, 112, 14, 14]          75,264
+     BatchNorm2d-153          [-1, 112, 14, 14]             224
+ StochasticDepth-154          [-1, 112, 14, 14]               0
+          MBConv-155          [-1, 112, 14, 14]               0
+          Conv2d-156          [-1, 672, 14, 14]          75,264
+     BatchNorm2d-157          [-1, 672, 14, 14]           1,344
+            SiLU-158          [-1, 672, 14, 14]               0
+          Conv2d-159          [-1, 672, 14, 14]          16,800
+     BatchNorm2d-160          [-1, 672, 14, 14]           1,344
+            SiLU-161          [-1, 672, 14, 14]               0
+AdaptiveAvgPool2d-162            [-1, 672, 1, 1]               0
+          Conv2d-163             [-1, 28, 1, 1]          18,844
+            SiLU-164             [-1, 28, 1, 1]               0
+          Conv2d-165            [-1, 672, 1, 1]          19,488
+         Sigmoid-166            [-1, 672, 1, 1]               0
+SqueezeExcitation-167          [-1, 672, 14, 14]               0
+          Conv2d-168          [-1, 112, 14, 14]          75,264
+     BatchNorm2d-169          [-1, 112, 14, 14]             224
+ StochasticDepth-170          [-1, 112, 14, 14]               0
+          MBConv-171          [-1, 112, 14, 14]               0
+          Conv2d-172          [-1, 672, 14, 14]          75,264
+     BatchNorm2d-173          [-1, 672, 14, 14]           1,344
+            SiLU-174          [-1, 672, 14, 14]               0
+          Conv2d-175            [-1, 672, 7, 7]          16,800
+     BatchNorm2d-176            [-1, 672, 7, 7]           1,344
+            SiLU-177            [-1, 672, 7, 7]               0
+AdaptiveAvgPool2d-178            [-1, 672, 1, 1]               0
+          Conv2d-179             [-1, 28, 1, 1]          18,844
+            SiLU-180             [-1, 28, 1, 1]               0
+          Conv2d-181            [-1, 672, 1, 1]          19,488
+         Sigmoid-182            [-1, 672, 1, 1]               0
+SqueezeExcitation-183            [-1, 672, 7, 7]               0
+          Conv2d-184            [-1, 192, 7, 7]         129,024
+     BatchNorm2d-185            [-1, 192, 7, 7]             384
+          MBConv-186            [-1, 192, 7, 7]               0
+          Conv2d-187           [-1, 1152, 7, 7]         221,184
+     BatchNorm2d-188           [-1, 1152, 7, 7]           2,304
+            SiLU-189           [-1, 1152, 7, 7]               0
+          Conv2d-190           [-1, 1152, 7, 7]          28,800
+     BatchNorm2d-191           [-1, 1152, 7, 7]           2,304
+            SiLU-192           [-1, 1152, 7, 7]               0
+AdaptiveAvgPool2d-193           [-1, 1152, 1, 1]               0
+          Conv2d-194             [-1, 48, 1, 1]          55,344
+            SiLU-195             [-1, 48, 1, 1]               0
+          Conv2d-196           [-1, 1152, 1, 1]          56,448
+         Sigmoid-197           [-1, 1152, 1, 1]               0
+SqueezeExcitation-198           [-1, 1152, 7, 7]               0
+          Conv2d-199            [-1, 192, 7, 7]         221,184
+     BatchNorm2d-200            [-1, 192, 7, 7]             384
+ StochasticDepth-201            [-1, 192, 7, 7]               0
+          MBConv-202            [-1, 192, 7, 7]               0
+          Conv2d-203           [-1, 1152, 7, 7]         221,184
+     BatchNorm2d-204           [-1, 1152, 7, 7]           2,304
+            SiLU-205           [-1, 1152, 7, 7]               0
+          Conv2d-206           [-1, 1152, 7, 7]          28,800
+     BatchNorm2d-207           [-1, 1152, 7, 7]           2,304
+            SiLU-208           [-1, 1152, 7, 7]               0
+AdaptiveAvgPool2d-209           [-1, 1152, 1, 1]               0
+          Conv2d-210             [-1, 48, 1, 1]          55,344
+            SiLU-211             [-1, 48, 1, 1]               0
+          Conv2d-212           [-1, 1152, 1, 1]          56,448
+         Sigmoid-213           [-1, 1152, 1, 1]               0
+SqueezeExcitation-214           [-1, 1152, 7, 7]               0
+          Conv2d-215            [-1, 192, 7, 7]         221,184
+     BatchNorm2d-216            [-1, 192, 7, 7]             384
+ StochasticDepth-217            [-1, 192, 7, 7]               0
+          MBConv-218            [-1, 192, 7, 7]               0
+          Conv2d-219           [-1, 1152, 7, 7]         221,184
+     BatchNorm2d-220           [-1, 1152, 7, 7]           2,304
+            SiLU-221           [-1, 1152, 7, 7]               0
+          Conv2d-222           [-1, 1152, 7, 7]          28,800
+     BatchNorm2d-223           [-1, 1152, 7, 7]           2,304
+            SiLU-224           [-1, 1152, 7, 7]               0
+AdaptiveAvgPool2d-225           [-1, 1152, 1, 1]               0
+          Conv2d-226             [-1, 48, 1, 1]          55,344
+            SiLU-227             [-1, 48, 1, 1]               0
+          Conv2d-228           [-1, 1152, 1, 1]          56,448
+         Sigmoid-229           [-1, 1152, 1, 1]               0
+SqueezeExcitation-230           [-1, 1152, 7, 7]               0
+          Conv2d-231            [-1, 192, 7, 7]         221,184
+     BatchNorm2d-232            [-1, 192, 7, 7]             384
+ StochasticDepth-233            [-1, 192, 7, 7]               0
+          MBConv-234            [-1, 192, 7, 7]               0
+          Conv2d-235           [-1, 1152, 7, 7]         221,184
+     BatchNorm2d-236           [-1, 1152, 7, 7]           2,304
+            SiLU-237           [-1, 1152, 7, 7]               0
+          Conv2d-238           [-1, 1152, 7, 7]          10,368
+     BatchNorm2d-239           [-1, 1152, 7, 7]           2,304
+            SiLU-240           [-1, 1152, 7, 7]               0
+AdaptiveAvgPool2d-241           [-1, 1152, 1, 1]               0
+          Conv2d-242             [-1, 48, 1, 1]          55,344
+            SiLU-243             [-1, 48, 1, 1]               0
+          Conv2d-244           [-1, 1152, 1, 1]          56,448
+         Sigmoid-245           [-1, 1152, 1, 1]               0
+SqueezeExcitation-246           [-1, 1152, 7, 7]               0
+          Conv2d-247            [-1, 320, 7, 7]         368,640
+     BatchNorm2d-248            [-1, 320, 7, 7]             640
+          MBConv-249            [-1, 320, 7, 7]               0
+          Conv2d-250           [-1, 1280, 7, 7]         409,600
+     BatchNorm2d-251           [-1, 1280, 7, 7]           2,560
+            SiLU-252           [-1, 1280, 7, 7]               0
+AdaptiveAvgPool2d-253           [-1, 1280, 1, 1]               0
+         Dropout-254                 [-1, 1280]               0
+          Linear-255                 [-1, 1000]       1,281,000
+================================================================
+Total params: 5,288,548
+Trainable params: 5,288,548
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.57
+Forward/backward pass size (MB): 173.65
+Params size (MB): 20.17
+Estimated Total Size (MB): 194.40
+----------------------------------------------------------------
+None

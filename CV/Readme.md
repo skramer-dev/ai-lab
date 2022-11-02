@@ -1,3 +1,26 @@
+## Model objective
+The mode gets an image of a pokemon and has to predict it's primary type according to the metatadata from the list below
+
+## Data
+Our training data is a mix of two datasets from Kaggle:
+
+https://www.kaggle.com/datasets/lantian773030/pokemonclassification
+
+The first dataset was fully used. We only used data from the second one from Pokemon that weren't already in the first (basically everything newer than gen 1 Pokemon)
+
+https://www.kaggle.com/datasets/aaronyin/oneshotpokemon
+
+The following was used to match metadata with the pokemon from the other two datasets:
+
+https://www.kaggle.com/datasets/rounakbanik/pokemon
+
+## Setup info
+| type | value |
+| --- | --- |
+| without data augmentation | ~12.000 images |
+| with data augementation | ~25.000 images |
+| training duration | heavily depends on available hardware. On the 1070 that we used, anything from a few minutes to 750 mins for the longest run |
+
 ## Ordner
 
 | Odner | Inhalt |

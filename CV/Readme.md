@@ -6,9 +6,11 @@ Our training data is a mix of two datasets from Kaggle:
 
 https://www.kaggle.com/datasets/lantian773030/pokemonclassification
 
-The first dataset was fully used. We only used data from the second one from Pokemon that weren't already in the first (basically everything newer than gen 1 Pokemon)
+The first dataset was fully used. We only used data from the second and third one from Pokemon that weren't already in the first (basically everything newer than gen 1 Pokemon). The data from the github repo was handpicked (mostly the sprite images), but no pokemon above Generation 6 was used.
 
 https://www.kaggle.com/datasets/aaronyin/oneshotpokemon
+
+https://github.com/PokeAPI/sprites
 
 The following was used to match metadata with the pokemon from the other two datasets:
 

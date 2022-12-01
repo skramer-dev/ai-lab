@@ -1,7 +1,5 @@
 from datasets import load_dataset, ClassLabel
 from transformers import AutoTokenizer, EarlyStoppingCallback
-from sklearn.preprocessing import LabelEncoder
-import pandas as pd
 import numpy as np
 from datasets import load_metric
 

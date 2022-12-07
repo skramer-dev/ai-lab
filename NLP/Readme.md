@@ -25,9 +25,9 @@ https://www.kaggle.com/datasets/rounakbanik/pokemon
 
 | folders | content |
 | ------------------ | ----------------- |
-| [*data*](./data)  | everything around the data that was used for training and inference |
-| [*finetuning*](./finetuning) | multiple notebooks for the finuting approach, fully trained models were not saved to git due to their large size |
-| [*prompting*](./prompting) | multiple notebooks for the prompting approach, fully trained models were not saved to git due to their large size |
+| [*data*](/assignment/data)  | everything around the data that was used for training and inference |
+| [*finetuning*](/assignment/finetuning) | multiple notebooks for the finuting approach, fully trained models were not saved to git due to their large size |
+| [*prompting*](/assignment/prompting) | multiple notebooks for the prompting approach, fully trained models were not saved to git due to their large size |
 
 ## Notebooks
 

@@ -1,153 +1,141 @@
 ######
-                                         |  bert-base        |  bert-large         |  gpt2-prompting     |  
+Input                                    |  bert-base        |  bert-large         |  gpt2-prompting     |  
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-                                         |  Exeggutor:4.62%  |  Dragonite:26.77%   |  Wartortle:48.29%   |  
+Walking stone monster with a huge body.  |  Exeggutor:4.62%  |  Dragonite:26.77%   |  Wartortle:48.29%   |  
                                          |  Mr. Mime:2.59%   |  Aerodactyl:21.14%  |  Wigglytuff:48.29%  |  
-Walking stone monster with a huge body.  |  Golem:2.42%      |  Haunter:4.37%      |  Grimer:1.51%       |  
+                                         |  Golem:2.42%      |  Haunter:4.37%      |  Grimer:1.51%       |  
                                          |  Marowak:2.27%    |  Arcanine:4.06%     |  Golem:0.70%        |  
                                          |  Machop:2.22%     |  Gyarados:3.11%     |  Graveler:0.24%     |  
-
 ######
 
 ######
-                                                         |  bert-base        |  bert-large      |  gpt2-prompting     |  
+Input                                                    |  bert-base        |  bert-large      |  gpt2-prompting     |  
 ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-                                                         |  Exeggutor:2.73%  |  Onix:18.61%     |  Wartortle:47.80%   |  
+Walking stone monster with a huge body. It hates water.  |  Exeggutor:2.73%  |  Onix:18.61%     |  Wartortle:47.80%   |  
                                                          |  Haunter:2.25%    |  Geodude:18.31%  |  Wigglytuff:47.80%  |  
-Walking stone monster with a huge body. It hates water.  |  Golem:2.12%      |  Golem:15.95%    |  Metapod:0.96%      |  
+                                                         |  Golem:2.12%      |  Golem:15.95%    |  Metapod:0.96%      |  
                                                          |  Dugtrio:1.86%    |  Rhyhorn:8.45%   |  Grimer:0.93%       |  
                                                          |  Meowth:1.76%     |  Rhydon:4.69%    |  Onix:0.92%         |  
-
 ######
 
 ######
-                                                                                      |  bert-base         |  bert-large        |  gpt2-prompting    |  
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-                                                                                      |  Poliwrath:3.15%   |  Exeggutor:44.72%  |  Onix:73.81%       |  
-                                                                                      |  Scyther:2.83%     |  Nidoqueen:26.21%  |  Golem:5.13%       |  
-Walking stone monster with a huge body. It hates water. Favorit attack is earthshake  |  Vulpix:2.21%      |  Pinsir:6.37%      |  Horsea:4.84%      |  
-                                                                                      |  Hitmonchan:2.13%  |  Ekans:3.98%       |  Wartortle:4.09%   |  
-                                                                                      |  Mewtwo:2.09%      |  Cubone:3.10%      |  Wigglytuff:4.09%  |  
-
+Input                                                    |  bert-base         |  bert-large        |  gpt2-prompting    |  
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Walking stone monster with a huge body. It hates water.  |  Poliwrath:3.15%   |  Exeggutor:44.72%  |  Onix:73.81%       |  
+attack is earthshake                                     |  Scyther:2.83%     |  Nidoqueen:26.21%  |  Golem:5.13%       |  
+                                                         |  Vulpix:2.21%      |  Pinsir:6.37%      |  Horsea:4.84%      |  
+                                                         |  Hitmonchan:2.13%  |  Ekans:3.98%       |  Wartortle:4.09%   |  
+                                                         |  Mewtwo:2.09%      |  Cubone:3.10%      |  Wigglytuff:4.09%  |  
 ######
 
 ######
-                                                       |  bert-base         |  bert-large         |  gpt2-prompting    |  
+Input                                                  |  bert-base         |  bert-large         |  gpt2-prompting    |  
 ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-                                                       |  Pidgey:3.15%      |  Butterfree:28.46%  |  Sandslash:12.84%  |  
+Insect with sharp claws only found in the safari zone  |  Pidgey:3.15%      |  Butterfree:28.46%  |  Sandslash:12.84%  |  
                                                        |  Pinsir:2.79%      |  Caterpie:24.06%    |  Rattata:10.19%    |  
-Insect with sharp claws only found in the safari zone  |  Spearow:2.47%     |  Beedrill:22.04%    |  Spearow:8.57%     |  
+                                                       |  Spearow:2.47%     |  Beedrill:22.04%    |  Spearow:8.57%     |  
                                                        |  Aerodactyl:2.38%  |  Venomoth:7.47%     |  Sandshrew:7.74%   |  
                                                        |  Pidgeotto:2.31%   |  Weedle:5.30%       |  Bulbasaur:7.42%   |  
-
 ######
 
 ######
-                      |  bert-base        |  bert-large      |  gpt2-prompting  |  
+Input                 |  bert-base        |  bert-large      |  gpt2-prompting  |  
 ───────────────────────────────────────────────────────────────────────────────────────────
-                      |  Abra:8.88%       |  Snorlax:98.87%  |  Oddish:46.59%   |  
+only wakes up to eat  |  Abra:8.88%       |  Snorlax:98.87%  |  Oddish:46.59%   |  
                       |  Snorlax:7.38%    |  Drowzee:0.14%   |  Onix:12.87%     |  
-only wakes up to eat  |  Lickitung:4.65%  |  Psyduck:0.08%   |  Drowzee:9.05%   |  
+                      |  Lickitung:4.65%  |  Psyduck:0.08%   |  Drowzee:9.05%   |  
                       |  Clefairy:3.52%   |  Weezing:0.07%   |  Ditto:9.05%     |  
                       |  Eevee:3.29%      |  Slowpoke:0.05%  |  Abra:6.45%      |  
-
 ######
 
 ######
-                                               |  bert-base        |  bert-large       |  gpt2-prompting   |  
+Input                                          |  bert-base        |  bert-large       |  gpt2-prompting   |  
 ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-                                               |  Jynx:3.29%       |  Onix:97.44%      |  Geodude:32.81%   |  
+A rock pokemon which looks like a stone snake  |  Jynx:3.29%       |  Onix:97.44%      |  Geodude:32.81%   |  
                                                |  Graveler:2.76%   |  Graveler:0.26%   |  Onix:28.03%      |  
-A rock pokemon which looks like a stone snake  |  Golem:2.59%      |  Sandslash:0.20%  |  Articuno:12.55%  |  
+                                               |  Golem:2.59%      |  Sandslash:0.20%  |  Articuno:12.55%  |  
                                                |  Geodude:2.51%    |  Geodude:0.18%    |  Rhyhorn:5.44%    |  
                                                |  Sandslash:2.29%  |  Golem:0.10%      |  Rhydon:5.44%     |  
-
 ######
 
 ######
-                    |  bert-base        |  bert-large       |  gpt2-prompting   |  
+Input               |  bert-base        |  bert-large       |  gpt2-prompting   |  
 ───────────────────────────────────────────────────────────────────────────────────────────
-                    |  Golem:3.52%      |  Onix:62.83%      |  Onix:38.99%      |  
+A stone like snake  |  Golem:3.52%      |  Onix:62.83%      |  Onix:38.99%      |  
                     |  Jynx:2.97%       |  Pinsir:5.77%     |  Articuno:18.32%  |  
-A stone like snake  |  Marowak:2.80%    |  Dugtrio:5.42%    |  Moltres:9.35%    |  
+                    |  Marowak:2.80%    |  Dugtrio:5.42%    |  Moltres:9.35%    |  
                     |  Gengar:2.67%     |  Ekans:4.38%      |  Gengar:3.91%     |  
                     |  Sandslash:2.53%  |  Exeggutor:2.81%  |  Haunter:3.01%    |  
-
 ######
 
 ######
-                                                                                                |  bert-base         |  bert-large         |  gpt2-prompting     |  
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-                                                                                                |  Venusaur:5.31%    |  Oddish:28.47%      |  Jigglypuff:27.01%  |  
-                                                                                                |  Jigglypuff:4.49%  |  Jigglypuff:15.30%  |  Jynx:27.01%        |  
-The pokemon has a small Flower on the head and likes to sing. During the night it is sleeping.  |  Tangela:4.34%     |  Vileplume:10.03%   |  Mewtwo:7.08%       |  
-                                                                                                |  Vileplume:2.93%   |  Venonat:4.61%      |  Mew:7.08%          |  
-                                                                                                |  Jynx:2.02%        |  Venusaur:3.22%     |  Marowak:4.49%      |  
-
+Input                                           |  bert-base         |  bert-large         |  gpt2-prompting     |  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+The pokemon has a small Flower on the head and  |  Venusaur:5.31%    |  Oddish:28.47%      |  Jigglypuff:27.01%  |  
+to sing. During the night it is sleeping.       |  Jigglypuff:4.49%  |  Jigglypuff:15.30%  |  Jynx:27.01%        |  
+                                                |  Tangela:4.34%     |  Vileplume:10.03%   |  Mewtwo:7.08%       |  
+                                                |  Vileplume:2.93%   |  Venonat:4.61%      |  Mew:7.08%          |  
+                                                |  Jynx:2.02%        |  Venusaur:3.22%     |  Marowak:4.49%      |  
 ######
 
 ######
-                                                                 |  bert-base        |  bert-large     |  gpt2-prompting  |  
-─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-                                                                 |  Ninetales:6.86%  |  Mew:98.76%     |  Mewtwo:49.53%   |  
-                                                                 |  Raichu:3.39%     |  Golbat:0.14%   |  Mew:49.53%      |  
-Many believe that all other Pokémon are descendants of this one  |  Eevee:2.69%      |  Mewtwo:0.10%   |  Chansey:0.58%   |  
-                                                                 |  Cubone:2.63%     |  Lapras:0.09%   |  Lapras:0.13%    |  
-                                                                 |  Pikachu:2.24%    |  Weezing:0.07%  |  Dratini:0.09%   |  
-
+Input                                                        |  bert-base        |  bert-large     |  gpt2-prompting  |  
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Many believe that all other Pokémon are descendants of this  |  Ninetales:6.86%  |  Mew:98.76%     |  Mewtwo:49.53%   |  
+                                                             |  Raichu:3.39%     |  Golbat:0.14%   |  Mew:49.53%      |  
+                                                             |  Eevee:2.69%      |  Mewtwo:0.10%   |  Chansey:0.58%   |  
+                                                             |  Cubone:2.63%     |  Lapras:0.09%   |  Lapras:0.13%    |  
+                                                             |  Pikachu:2.24%    |  Weezing:0.07%  |  Dratini:0.09%   |  
 ######
 
 ######
-                                                         |  bert-base        |  bert-large        |  gpt2-prompting  |  
+Input                                                    |  bert-base        |  bert-large        |  gpt2-prompting  |  
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-                                                         |  Magnemite:4.74%  |  Blastoise:29.68%  |  Mewtwo:49.90%   |  
+It was the result of various experiments of team rocket  |  Magnemite:4.74%  |  Blastoise:29.68%  |  Mewtwo:49.90%   |  
                                                          |  Geodude:3.50%    |  Mewtwo:14.84%     |  Mew:49.90%      |  
-It was the result of various experiments of team rocket  |  Magmar:3.34%     |  Charizard:13.18%  |  Alakazam:0.06%  |  
+                                                         |  Magmar:3.34%     |  Charizard:13.18%  |  Alakazam:0.06%  |  
                                                          |  Magneton:3.08%   |  Machamp:5.65%     |  Abra:0.03%      |  
                                                          |  Porygon:2.75%    |  Kingler:4.95%     |  Paras:0.02%     |  
-
 ######
 
 ######
-                                                                                                                                         |  bert-base        |  bert-large        |  gpt2-prompting   |  
-─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-                                                                                                                                         |  Tauros:4.05%     |  Dragonite:81.83%  |  Gyarados:96.35%  |  
-                                                                                                                                         |  Gyarados:3.76%   |  Electabuzz:2.15%  |  Magmar:0.74%     |  
-A snake dragon like pokemon with a long tail. It is an higher evolution and is really strong. One of the top five is using this pokemon  |  Marowak:3.56%    |  Mewtwo:2.09%      |  Magikarp:0.74%   |  
-                                                                                                                                         |  Machoke:3.01%    |  Gyarados:1.40%    |  Ponyta:0.33%     |  
-                                                                                                                                         |  Ninetales:2.20%  |  Aerodactyl:1.28%  |  Lapras:0.28%     |  
-
+Input                                                 |  bert-base        |  bert-large        |  gpt2-prompting   |  
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+A snake dragon like pokemon with a long tail. It      |  Tauros:4.05%     |  Dragonite:81.83%  |  Gyarados:96.35%  |  
+an higher evolution and is really strong. One of the  |  Gyarados:3.76%   |  Electabuzz:2.15%  |  Magmar:0.74%     |  
+five is using this pokemon                            |  Marowak:3.56%    |  Mewtwo:2.09%      |  Magikarp:0.74%   |  
+                                                      |  Machoke:3.01%    |  Gyarados:1.40%    |  Ponyta:0.33%     |  
+                                                      |  Ninetales:2.20%  |  Aerodactyl:1.28%  |  Lapras:0.28%     |  
 ######
 
 ######
-                                                                                                           |  bert-base        |  bert-large        |  gpt2-prompting   |  
-───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-                                                                                                           |  Pikachu:3.56%    |  Zapdos:96.98%     |  Pikachu:95.66%   |  
-                                                                                                           |  Growlithe:3.52%  |  Moltres:0.57%     |  Bulbasaur:1.12%  |  
-It is yellow and it's cheeks have red circles. It has long ears and likes thunder. Ash is his best friend  |  Marowak:3.21%    |  Tauros:0.23%      |  Raichu:0.30%     |  
-                                                                                                           |  Tauros:3.06%     |  Electrode:0.23%   |  Magmar:0.28%     |  
-                                                                                                           |  Machoke:2.07%    |  Charmander:0.15%  |  Magikarp:0.28%   |  
-
+Input                                                |  bert-base        |  bert-large        |  gpt2-prompting   |  
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+It is yellow and it's cheeks have red circles. It    |  Pikachu:3.56%    |  Zapdos:96.98%     |  Pikachu:95.66%   |  
+long ears and likes thunder. Ash is his best friend  |  Growlithe:3.52%  |  Moltres:0.57%     |  Bulbasaur:1.12%  |  
+                                                     |  Marowak:3.21%    |  Tauros:0.23%      |  Raichu:0.30%     |  
+                                                     |  Tauros:3.06%     |  Electrode:0.23%   |  Magmar:0.28%     |  
+                                                     |  Machoke:2.07%    |  Charmander:0.15%  |  Magikarp:0.28%   |  
 ######
 
 ######
-                               |  bert-base        |  bert-large       |  gpt2-prompting  |  
+Input                          |  bert-base        |  bert-large       |  gpt2-prompting  |  
 ─────────────────────────────────────────────────────────────────────────────────────────────────────
-                               |  Alakazam:15.91%  |  Alakazam:98.03%  |  Kadabra:99.60%  |  
+A psychic pokemon with spoons  |  Alakazam:15.91%  |  Alakazam:98.03%  |  Kadabra:99.60%  |  
                                |  Mr. Mime:4.04%   |  Kadabra:0.98%    |  Alakazam:0.30%  |  
-A psychic pokemon with spoons  |  Kadabra:4.00%    |  Gengar:0.14%     |  Gengar:0.06%    |  
+                               |  Kadabra:4.00%    |  Gengar:0.14%     |  Gengar:0.06%    |  
                                |  Gengar:2.26%     |  Mewtwo:0.13%     |  Drowzee:0.01%   |  
                                |  Hypno:1.68%      |  Rattata:0.08%    |  Ditto:0.01%     |  
-
 ######
 
 ######
-                                |  bert-base         |  bert-large       |  gpt2-prompting   |  
+Input                           |  bert-base         |  bert-large       |  gpt2-prompting   |  
 ────────────────────────────────────────────────────────────────────────────────────────────────────────
-                                |  Charizard:10.81%  |  Moltres:87.28%   |  Moltres:65.48%   |  
+Red legendary dragon with fire  |  Charizard:10.81%  |  Moltres:87.28%   |  Moltres:65.48%   |  
                                 |  Moltres:8.26%     |  Arcanine:1.68%   |  Articuno:12.77%  |  
-Red legendary dragon with fire  |  Zapdos:4.05%      |  Magmar:1.38%     |  Marowak:11.35%   |  
+                                |  Zapdos:4.05%      |  Magmar:1.38%     |  Marowak:11.35%   |  
                                 |  Dragonair:2.67%   |  Articuno:1.36%   |  Magmar:2.87%     |  
                                 |  Articuno:2.33%    |  Dragonair:0.88%  |  Magikarp:2.87%   |  
-
 ######
+
+

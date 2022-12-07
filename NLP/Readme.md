@@ -26,14 +26,14 @@ https://www.kaggle.com/datasets/rounakbanik/pokemon
 | folders | content |
 | ------------------ | ----------------- |
 | [*data*](https://github.com/skramer-dev/ai-lab/tree/main/NLP/assignment/data)  | everything around the data that was used for training and inference |
-| [*finetuning*](/assignment/finetuning/) | multiple notebooks for the finuting approach, fully trained models were not saved to git due to their large size |
-| [*prompting*](/assignment/prompting/) | multiple notebooks for the prompting approach, fully trained models were not saved to git due to their large size |
+| [*finetuning*](https://github.com/skramer-dev/ai-lab/tree/main/NLP/assignment/finetuning/) | multiple notebooks for the finuting approach, fully trained models were not saved to git due to their large size |
+| [*prompting*](https://github.com/skramer-dev/ai-lab/tree/main/NLP/assignment/prompting/) | multiple notebooks for the prompting approach, fully trained models were not saved to git due to their large size |
 
 ## Notebooks
 
 | Notebook | content |
 | ------------------ | ----------------- |
-| [*inference_comp*] | a lot of code just to have a fancy comparison between the predictions of the different models |
+| [*inference_comp*](assignment/inference_comp.ipynb) | a lot of code just to have a fancy comparison between the predictions of the different models |
 | [*finetuning/bert-base*] | fintuning notebook for a bert-base model, this one was trained locally on weaker hardware |
 | [*finetuning/bert-large-remote*] | we converted the bert-base notebook into a normal python file to be able to run it remotely on better hardware. Functionally the same as the regular bert notebook except using a bert large |
 | [*finetuning/Inference*] | first iteration of inference code just for the bert model we trained initially. For better comparison use the 'inference_comp' notebook |

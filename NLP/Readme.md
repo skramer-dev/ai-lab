@@ -4,6 +4,8 @@ The model gets a text prompt describing a pokemon and has to predict what pokemo
 ## Data
 Our training data is a mix of data pulled from multiple websites:
 
+https://pokemon.fandom.com/wiki/
+
 [https://www.kaggle.com/datasets/lantian773030/pokemonclassification](https://pokemon.fandom.com/wiki/)
 
 https://pokemondb.net/pokedex/

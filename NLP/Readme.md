@@ -35,10 +35,10 @@ https://www.kaggle.com/datasets/rounakbanik/pokemon
 | ------------------ | ----------------- |
 | [*inference_comp*](assignment/inference_comp.ipynb) | a lot of code just to have a fancy comparison between the predictions of the different models |
 | [*finetuning/bert-base*](assignment/finetuning/bert-base.ipynb) | fintuning notebook for a bert-base model, this one was trained locally on weaker hardware |
-| [*finetuning/bert-large-remote*](assignment/finetuning/bert-large-remote.ipynb) | we converted the bert-base notebook into a normal python file to be able to run it remotely on better hardware. Functionally the same as the regular bert notebook except using a bert large |
+| [*finetuning/bert-large-remote*](assignment/finetuning/bert-large-remote.py) | we converted the bert-base notebook into a normal python file to be able to run it remotely on better hardware. Functionally the same as the regular bert notebook except using a bert large |
 | [*finetuning/Inference*](assignment/finetuning/inference.ipynb) | first iteration of inference code just for the bert model we trained initially. For better comparison use the 'inference_comp' notebook |
 | [*prompting/bert-local*](assignment/prompting/bert-local.ipynb) | prompting notebook for a bert-base model, once again trained locally |
 | [*prompting/bert-large-local*](assignment/prompting/bert-large-local.ipynb) | failed attempt at training a large bert locally, results didn't look good |
 | [*prompting/gpt2-local*](assignment/prompting/gpt2-local.ipynb) | prompting notebook for a gpt2 model, trained locally and with pretty good results |
-| [*prompting/gpt2-large-remote*](assignment/prompting/gpt-2-large-remote.ipynb) | converted notebook for training a large gpt2 remote (this one ultimately didn't work out because the remote machines didn't have the package versions that were needed and we didn't have root to fix it |
+| [*prompting/gpt2-large-remote*](assignment/prompting/gpt-2-large-remote.py) | converted notebook for training a large gpt2 remote (this one ultimately didn't work out because the remote machines didn't have the package versions that were needed and we didn't have root to fix it |
 | [*prompting/inference_prompting*](assignment/prompting/inference_prompting.ipynb) | inference notebook just for the prompting models, better comparison once again in the 'inference_comp' notebook |

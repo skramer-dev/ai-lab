@@ -6,7 +6,7 @@ Our training data is a mix of data pulled from multiple websites:
 
 https://pokemon.fandom.com/wiki/
 
-[https://www.kaggle.com/datasets/lantian773030/pokemonclassification](https://pokemon.fandom.com/wiki/)
+https://www.kaggle.com/datasets/lantian773030/pokemonclassification
 
 https://pokemondb.net/pokedex/
 
